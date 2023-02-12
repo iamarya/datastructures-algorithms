@@ -1,12 +1,13 @@
-# Problem Statement
-# You are given a string 'STR'. You have to convert the first alphabet of each word in a string to UPPER CASE.
-# For example:
-# If the given string 'STR' = ”I am a student of the third year” so you have to transform this string to ”I Am A Student Of The Third Year"
-
-from os import *
-from sys import *
+"""Problem Statement
+You are given a string 'STR'. You have to convert the first alphabet of each word in a string to UPPER CASE.
+For example:
+If the given string 'STR' = ”I am a student of the third year” so you have to transform this string to ”I Am A Student Of 
+The Third Year"
+"""
 from collections import *
 from math import *
+from os import *
+from sys import *
 
 
 def convertString(str):
@@ -14,16 +15,16 @@ def convertString(str):
     newstr = ""
     nextToBeCap = True
     for c in str:
-        if c == ' ':
+        if c == " ":
             nextToBeCap = True
-            newstr = newstr+" "
+            newstr = newstr + " "
             continue
-        if c != ' ' and nextToBeCap:
-            newstr = newstr+c.upper()
+        if c != " " and nextToBeCap:
+            newstr = newstr + c.upper()
             nextToBeCap = False
         else:
             newstr = newstr + c
     return newstr
 
 
-assert convertString('I love programming') == 'I Love Programming'
+assert convertString("I love programming") == "I Love Programming"
