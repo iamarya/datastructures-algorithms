@@ -25,7 +25,6 @@ def getLengthofLongestSubstring(s, k):
         count_distinct_char = 1
         for j in range(i + 1, len(s)):
             if s[j] not in temp_string:
-                # i+=1 is the same as i=i+1, whereas i=+1 just means i=(+1).
                 count_distinct_char += 1
             if s[j] in temp_string or count_distinct_char <= k:
                 temp_string = temp_string + s[j]
@@ -34,6 +33,10 @@ def getLengthofLongestSubstring(s, k):
         max_count = max(max_count, len(temp_string))
     return max_count
 
+
+# Note:
+# i+=1 is the same as i=i+1, whereas i=+1 just means i=(+1).
+# max inbuilt function
 
 assert (
     getLengthofLongestSubstring("abcbc", 2) == 4
