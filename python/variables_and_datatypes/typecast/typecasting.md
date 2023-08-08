@@ -1,0 +1,15 @@
+<div _ngcontent-serverapp-c231="" class="note-body"><div _ngcontent-serverapp-c231="" class="body-text"><h2><strong>Typecasting</strong></h2><p>&nbsp;</p><p>There may be times when you want to specify a type on to a variable. This can be done with type casting. Python is an OOP language, and as such, it uses classes to define data types, including its primitive types.</p><p>&nbsp;</p><p>Type casting is the method to convert from data type to another data type, according to user's requirements. This article introduces to the different type of casting supported by Python and how to implement them.</p><p>&nbsp;</p><p>Python supports two types of type casting –</p><ul><li>Implicit Type Conversion</li><li>Explicit Type Conversion</li></ul><p>&nbsp;</p><h4><strong>1. Implicit Type Conversion:</strong></h4><p>&nbsp;</p><p>In this, method, Python automatically converts one data type into another data type. There is no user intervention.</p><p>&nbsp;</p><pre><code class="language-python hljs">val = <span class="hljs-number">5</span>
+print(type(val))</code></pre><p>&nbsp;</p><p><strong>output:</strong></p><p>&nbsp;</p><pre><code class="language-python hljs"><span class="hljs-comment">#Python automatically converts val to int.</span>
+&lt; <span class="hljs-class"><span class="hljs-keyword">class</span> '<span class="hljs-title">int</span>' &gt;</span></code></pre><p>&nbsp;</p><p>&nbsp;</p><p><strong>Example:</strong></p><p>&nbsp;</p><pre><code class="language-python hljs">a = <span class="hljs-number">8.0</span>
+b = <span class="hljs-number">4.0</span>
+m = a * b
+print(m)
+print(type(m))</code></pre><p>&nbsp;</p><p><strong>output:</strong></p><p>&nbsp;</p><pre><code class="language-python hljs"><span class="hljs-number">32.0</span>
+&lt; <span class="hljs-class"><span class="hljs-keyword">class</span> '<span class="hljs-title">float</span>' </span></code></pre><p>&nbsp;</p><h4><strong>2. Explicit Type Conversion</strong></h4><p>&nbsp;</p><p>In Explicit Type, the Conversion user needs to manually convert data types.</p><p>Mainly in typecasting can be done with these data type functions:</p><ul><li><strong>int()</strong>&nbsp;- int class to construct an integer literal.</li><li><strong>float()</strong>&nbsp;- float class to construct a float literal.</li><li><strong>str()</strong>&nbsp;- string class to construct a string literal.</li></ul><p>&nbsp;</p><p><strong>Let’s see some examples of typecasting:</strong></p><p>&nbsp;</p><p><strong>Example:</strong></p><p>&nbsp;</p><pre><code class="language-python hljs"><span class="hljs-comment"># int variable</span>
+a = <span class="hljs-number">5.9</span>
+
+<span class="hljs-comment"># typecast to int </span>
+n = int(a)
+print(n)
+print(type(n))</code></pre><p>&nbsp;</p><p><strong>output:</strong></p><p>&nbsp;</p><pre><code class="language-python hljs"><span class="hljs-number">5</span>
+&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> '<span class="hljs-title">int</span>'&gt;</span></code></pre><p>&nbsp;</p><p>Here, we are casting float into int data type with int<strong>()</strong>&nbsp;function.</p></div></div>
