@@ -1,0 +1,16 @@
+<div _ngcontent-serverapp-c231="" class="note-body"><div _ngcontent-serverapp-c231="" class="body-text"><h2><strong>DefaultDict</strong></h2><p>&nbsp;</p><p>A DefaultDict is also a sub-class to the dictionary and returns a new dictionary-like object. Whenever it is used to provide some default values for the key that does not exist it never raises a KeyError.</p><p>&nbsp;</p><p><strong>Syntax:</strong></p><p>&nbsp;</p><pre><code class="language-python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">collections</span>.<span class="hljs-title">defaultdict</span>(<span class="hljs-params">default_factory</span>)</span></code></pre><p>&nbsp;</p><p>Here, default_factory is a function that provides the default value for the dictionary created. If this parameter is absent then there is a KeyError that gets raised otherwise the very first argument of 'defaultdict' is ‘default_factory’ as a default data type for the dictionary.</p><p>&nbsp;</p><h4><strong>Initializing DefaultDict Objects</strong></h4><p>&nbsp;</p><p>DefaultDict objects can be initialized using DefaultDict() method by passing the data type as an argument.</p><p>&nbsp;</p><p><strong>Example:</strong></p><p>&nbsp;</p><pre><code class="language-python hljs"><span class="hljs-comment"># Python program to demonstrate </span>
+<span class="hljs-comment"># defaultdict</span>
+<span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> defaultdict 
+
+<span class="hljs-comment"># Defining the dict </span>
+d = defaultdict(int) 
+<span class="hljs-comment"># The default value is 0 so there is no need to enter the key first </span>
+print(d[<span class="hljs-string">'B'</span>])
+<span class="hljs-comment"># L = [1, 2, 3, 4, 2, 4, 1, 2] </span>
+L = [<span class="hljs-string">'A'</span>,<span class="hljs-string">'B'</span>,<span class="hljs-string">'C'</span>,<span class="hljs-string">'D'</span>,<span class="hljs-string">'E'</span>,<span class="hljs-string">'A'</span>]
+<span class="hljs-comment"># Iterate through the list for keeping the count </span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> L: 
+    d[i] += <span class="hljs-number">1</span>
+
+print(d)</code></pre><p>&nbsp;</p><p><strong>Output:</strong></p><p>&nbsp;</p><pre><code class="language-python hljs"><span class="hljs-number">0</span>                                                                                                                             
+defaultdict(&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> '<span class="hljs-title">int</span>'&gt;, {'<span class="hljs-title">E</span>':</span> <span class="hljs-number">1</span>, <span class="hljs-string">'B'</span>: <span class="hljs-number">1</span>, <span class="hljs-string">'A'</span>: <span class="hljs-number">2</span>, <span class="hljs-string">'D'</span>: <span class="hljs-number">1</span>, <span class="hljs-string">'C'</span>: <span class="hljs-number">1</span>}) </code></pre></div></div>
